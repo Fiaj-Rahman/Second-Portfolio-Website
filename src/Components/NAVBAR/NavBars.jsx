@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
+// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+// import { CodeBracketSquareIcon } from "@heroicons/react/24/solid";
 
 const NavBars = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,7 +9,8 @@ const NavBars = () => {
   const navItems = [
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
-    { name: "Skills", link: "#skills" },
+    { name: "Education", link: "#education" },
+    { name: "Skills", link: "#skills" },  
     { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
   ];
@@ -68,7 +69,7 @@ const NavBars = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle navigation"
           >
-            <Bars3Icon className="h-7 w-7" />
+            {/* <Bars3Icon className="h-7 w-7" /> */}
           </button>
         </div>
       </div>
@@ -83,7 +84,7 @@ const NavBars = () => {
             className="p-2 text-gray-400 hover:text-indigo-400 rounded-full transition-colors"
             aria-label="Close menu"
           >
-            <XMarkIcon className="h-8 w-8" />
+            {/* <XMarkIcon className="h-8 w-8" /> */}
           </button>
         </div>
 
